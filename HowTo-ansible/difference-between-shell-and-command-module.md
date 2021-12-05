@@ -5,7 +5,7 @@ The command-module is the default module of ansible. If you use an ad-hoc comman
 
 ```
 ansible all -m command -a 'df -h /
-```ansible
+```
 
 equals 
 
