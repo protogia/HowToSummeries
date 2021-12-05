@@ -11,7 +11,8 @@ equals
 
 ```
 ansible all -a "df -h /"
-```ansible
+```
+
 It executes a given command directly without using the shell of a target-host! As a result you cant use shell-operators like '|,&,>,>>'
 
 ### shell-module
