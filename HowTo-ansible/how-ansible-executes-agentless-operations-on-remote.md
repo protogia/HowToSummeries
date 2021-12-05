@@ -8,7 +8,7 @@ Execute the following and replace 'host' with the name of your host or 'all'
 ansible host -m ping -vvv
 ```
 
-# Main-Steps of ansible when executing one module
+### Main-Steps of ansible when executing one module
 1. ansible creates temporary-dir on remote host
 
 2. ansible creates a stand-alone-executable on remote-host with all given config-params
