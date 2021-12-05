@@ -6,16 +6,19 @@ stop-example.yml
 ´´´
 ---
 - hosts: 
-  - localhost
+  - centos
+  - suse
 
   tasks:
     - name: first debug-msg
-      debug: msg="hello ansible!"
+      debug: 
+        msg: "hello ansible!"
 
     - name: stop play for test-purposes
       meta: end_play
 
     - name: second debug-msg
-      debug: msg="ciao ansible!"
+      debug: 
+        msg: "ciao ansible!"
 ´´´
 
