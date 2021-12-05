@@ -19,5 +19,5 @@ It executes a given command directly without using the shell of a target-host! A
 The shell-module is executing the given command through a shell on the target-host so you can use shell-operators
 
 ```
-ansible all -m shell -a 'df -h / > out.txt
+ansible all -m shell -a "df -h / > out.txt"
 ```
