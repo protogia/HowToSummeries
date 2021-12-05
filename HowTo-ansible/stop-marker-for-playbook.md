@@ -3,7 +3,7 @@
 The following playbook will stop at ´meta: end_play´ and wont print the last task.
 
 stop-example.yml
-´´´
+```
 ---
 - hosts: 
   - centos
@@ -20,5 +20,5 @@ stop-example.yml
     - name: second debug-msg
       debug: 
         msg: "ciao ansible!"
-´´´
+```
 
