@@ -35,7 +35,10 @@ sudo echo "@audio	soft	memlock	unlimited" >> /etc/security/limits.conf
   
 # check the realtimepriority and limits
 ulimit -l -r 
-# should show: unlimited and rtprio 95
+### should show: unlimited and rtprio 95
+
+# set jack2d to active:
+jack_control start
 ```
 
 Now retry your script. It trys out each sound-handling-framework and then waits for your words...
