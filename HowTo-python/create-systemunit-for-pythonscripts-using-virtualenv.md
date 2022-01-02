@@ -10,8 +10,9 @@ virtualenv -p python3 .
 
 And you created a src-dir with an script you want to execute on boot, you can follow the instructions below
 
-'' Create system-unit-file in `/etc/systemd/system/` called `your-servicename.service`
+1. Create system-unit-file in `/etc/systemd/system/` called `your-servicename.service`
 
+```
 [Unit]
 Description=your-servicename
 
@@ -27,7 +28,7 @@ WantedBy=multi-user.target
 Alias=servicename.service
 ```
 
-##  After replacing with correct path and scriptname reload-unitfile-definitions and enable service for reboot
+2. After replacing with correct path and scriptname reload-unitfile-definitions and enable service for reboot
 ```bash
 sudo systemctl daemon-reload 
 sudo systemctl enable --now your-servicename.service
