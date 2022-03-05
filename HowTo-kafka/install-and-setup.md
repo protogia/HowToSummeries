@@ -23,4 +23,13 @@ sudo systemctl start kafker.service
 ## Quickstart
 To run a quickstart check out https://kafka.apache.org/quickstart
 
+### shortcuts
+```
+# create topic
+bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
 
+# write into this topic using console-producer
+bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092
+# read from thgis topic using console-consumer
+bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092
+```
